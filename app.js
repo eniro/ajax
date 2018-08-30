@@ -13,6 +13,7 @@ function loadData() {
         console.log('READYSTATE', xhr.readyState);
         if(this.status === 200) {
             document.getElementById('output').innerHTML = `<i>${this.responseText}</i>`
+            document.getElementById('button').textContent = 'Close';
             //console.log(this.responseText);
         }
 
